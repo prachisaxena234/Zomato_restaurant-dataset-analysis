@@ -53,7 +53,7 @@ SELECT * FROM world.zomato_dataset ;
 
 # City Column - Removing miss-spelled letter from city column
 SELECT DISTINCT City FROM world.zomato_dataset 
-WHERE CITY LIKE '%?%';											/*IDENTIFYING IF THERE ARE ANY MISS-SPELLED WORD */
+WHERE CITY LIKE '%?%';					/*IDENTIFYING MISS-SPELLED WORD */
 
 SELECT REPLACE(City,'?','i') 
 FROM world.zomato_dataset WHERE City LIKE '%?%';         /*REPLACING MISS-SPELLED WORD */
